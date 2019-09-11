@@ -1,0 +1,1006 @@
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(fonts/OpenSans-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    position: relative;
+    height: 570px;
+    width: 100%;
+    min-width: 320px;
+    background-image: url("img/football_767.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: #000000;
+    box-sizing: border-box;
+}
+
+.container::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.logo {
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+}
+
+.surface-logo {
+    margin-top: 33px;
+    fill: #ffffff;
+    width: 135px;
+}
+
+.header-text {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-text-be-recruited, .header-text-play {
+    color: #ffffff;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-family: OpenSans-Bold;
+}
+
+.header-text-be-recruited {
+    margin-top: 120px;
+    margin-bottom: 10px;
+    margin-left: 6.25%;
+}
+
+.header-text-play {
+    margin-left: 20%;
+}
+
+.buttons {
+    z-index: 5;
+    margin-top: 80px;
+    position: relative;
+}
+
+.app-store-button, .google-play-button  {
+    display: flex;
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+    padding: 6px;
+    background-color: #5e42b0;
+    border-radius: 40px;
+    padding-left: 25%; 
+}
+
+.app-store-button:hover, .google-play-button:hover {
+   background-color: #7f5aee; 
+}
+
+.icon {
+    fill: #ffffff;
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+
+.store-text {
+    margin-left: 2.5%;    
+}
+
+.download {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 8px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: OpenSans-Regular;
+}
+
+.google-play-button {
+    margin-top: 15px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.athlets-container, .players-container {
+    min-width: 320px;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.athlets-header::before {
+    background-image: url(img/footballer_192.png);
+    position: absolute;
+    width: 100%;
+    height: 281px;
+    content: "";
+    z-index: 5;
+    background-repeat: no-repeat;
+    top: 75px;
+    left: 50%;
+    margin-left: -96px;
+    width: 192px;
+}
+
+.athlets-header, .players-header {
+    font-family: OpenSans-Bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    margin-left: 6.25%;
+    position: relative;
+}
+
+.connection-box {
+    margin-top: 250px;
+    background-color: #fafafa;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.collaboration-box {
+    background-color: #f5f4f9;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.growth-box {
+    background-color: #5e42b0;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.conection-header, .collaboration-header, .growth-header {
+    display: flex;
+}
+
+.connection-number, .collaboration-number, .growth-number {
+    font-size: 14px;
+    color: #000000;
+    font-family: OpenSans-Bold;
+}
+
+.connection-number::after, .collaboration-number::after {
+    content: "";
+    width: 15px;
+    height: 3px;
+    background-color: #5e42b0;
+    display: block;
+    border-radius: 25%;
+}
+
+.growth-number::after {
+    content: "";
+    width: 15px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 25%;
+}
+
+.connection, .collaboration, .growth {
+    font-size: 23px;
+    color: #c1c1c1;
+    font-family: OpenSans-Bold;
+    text-transform: uppercase;
+    margin-left: 9px;
+}
+
+.connection-text, .collaboration-text, .growth-text  {
+    margin-top: 18px;
+    font-size: 15px;
+    color: #000000;
+    font-family: OpenSans-Regular;
+    line-height: 18px;
+}
+
+.players-header::before {
+    background-image: url(img/basketballer_302.png);
+    position: absolute;
+    width: 302px;
+    height: 248px;
+    content: "";
+    z-index: 5;
+    background-repeat: no-repeat;
+    top: 75px;
+    left: 50%;
+    margin-left: -170px;
+}
+
+.activities-container {
+    width: 100%;
+    min-width: 320px;
+}
+
+.be-active-image {
+    background-image: url(img/be-active_640.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 320px;
+    background-position: center;
+    position: relative;
+}
+
+.be-active-box, .find-contact-box, .work-it-box {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 75px;
+    padding-top: 25px;
+}
+
+.be-active, .find-contact, .work-it {
+    font-family: OpenSans-Bold;
+    font-size: 28px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.be-active-text, .find-contact-text, .work-it-text {
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #000000;
+    line-height: 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.be-active-number-box, .find-contact-number-box, .work-it-number-box {
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0;
+    display: flex;
+    position: absolute;
+    bottom: -10px;
+    left: 20px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.be-active-number, .find-contact-number, .work-it-number {
+    font-family: OpenSans-Bold;
+    font-size: 14px;
+    color: #f5f6f7;
+    
+}
+
+.be-active-number::after, .find-contact-number::after, .work-it-number::after {
+    content: "";
+    width: 15px;
+    height: 3px;
+    background-color: #8f7bc8;
+    display: block;
+    border-radius: 25%;
+}
+
+.find-contact-image {
+    background-image: url(img/find-contact_640.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 320px;
+    background-position: center;
+    position: relative;
+}
+
+.work-it-image {
+    background-image: url(img/work-it_640.jpg);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 320px;
+    background-position: center;
+    position: relative;
+}
+
+.footer-container {
+    width: 100%;
+    min-width: 320px;
+    height: 570px;
+    background-image: url(img/game_767.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #000000;
+    position: relative;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+
+.footer-container::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+}
+
+.footer-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    z-index: 5;
+    position: relative;
+    margin-top: 48px;
+}
+
+.footer-text-download {
+    font-family: OpenSans-Bold;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.footer-text-show {
+    font-family: OpenSans-Regular;
+    font-size: 14px;
+    color: #9b8ec1;
+}
+
+.logo-box {
+    position: relative;
+    z-index: 5;
+    width: 75px;
+    height: 75px;
+    background-color: #6a4bc2;
+    border-radius: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sur-logo {
+    width: 57px;
+    height: 49px;
+    fill: #ffffff;
+}
+    
+.buttons-bottom {
+    margin-top: 70px;
+}
+
+.surface-logo-bottom {
+    margin-top: 82px;
+}
+
+@media (min-width: 461px) and (max-width: 640px) {
+   .container {
+        background-image: url("img/football_1280.jpg");
+    }
+    
+    .header-text-play {
+        margin-left: 50%;
+    }
+    
+    .app-store-button, .google-play-button  {
+        padding-left: 0;
+        justify-content: center;
+    }
+    
+    .be-active-image {
+        background-image: url(img/be-active.jpg);
+    }
+    
+    .find-contact-image {
+        background-image: url(img/find-contact.jpg);
+    }
+    
+    .work-it-image {
+        background-image: url(img/work-it.jpg);
+    }
+    
+    .footer-container {
+        background-image: url(img/game_1280.jpg);
+    }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+    .container {
+        height: 960px;
+        background-image: url("img/football_1280.jpg");
+    }
+    
+    .surface-logo {
+        margin-top: 37px;
+        width: 210px;
+    }
+    
+    .header-text-be-recruited, .header-text-play {
+        font-size: 64px;
+    }
+    
+    .header-text-be-recruited {
+        margin-top: 160px;
+        margin-left: 11.5%;
+    }
+
+    .header-text-play {
+        margin-left: 25.5%;
+    }
+    
+    .buttons {
+        margin-top: 287px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    
+    .app-store-button, .google-play-button  {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px;
+        width: 40vw;
+        height: 78px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .google-play-button {
+        margin-top: 0;
+    }
+    
+    .icon {
+        width: 39px;
+        height: 47px;
+    }
+    
+    .download {
+        font-size: 14px;
+    }
+    
+    .athlets-container, .players-container {
+        margin-top: 0;
+        padding-top: 50px;
+    }
+
+    .athlets-header::before {
+        background-image: url(img/footballer_497.png);
+        width: 497px;
+        height: 699px;
+        content: "";
+        top: 35px;
+        left: -450px;
+        margin-left: 0;
+    }
+
+    .athlets-header {
+        font-size: 80px;
+        margin-left: 38.4vw;
+    }
+
+    .players-header {
+        font-size: 80px;
+        margin-left: 4.16vw;
+    }
+    
+    .connection-box {
+        margin-top: 10px;
+        background-color: #ffffff;
+    }
+    
+    .connection-box, .collaboration-box, .growth-box {
+        padding-left: 38.4vw;
+        padding-right: 4.55vw;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    
+    .connection-number, .collaboration-number, .growth-number {
+        font-size: 18px;
+    }
+
+    .connection-number::after, .collaboration-number::after {
+        width: 20px;
+        height: 5px;
+    }
+
+    .growth-number-player {
+        color: #8765dd;
+    }
+    
+    .growth-number::after {
+        width: 20px;
+        height: 5px;
+    }
+
+    .connection, .collaboration, .growth {
+        font-size: 32px;
+        position: relative;
+        z-index: 6;
+    }
+
+    .connection-text, .collaboration-text, .growth-text  {
+        font-size: 16px;
+        line-height: 28px;
+        line-height: 28px;
+    }
+    
+    .growth-text {
+        color: #ffffff;
+    }
+    
+    .connection-box-player, .collaboration-box-player, .growth-box-player {
+        padding-left: 4.16vw;
+        padding-right: 44.27vw;
+    }
+    
+    .growth-box-player {
+        background-color: #090c35;
+    }
+    
+    .players-header::before {
+        background-image: url(img/basketballer_436.png);
+        width: 436px;
+        height: 565px;
+        top: 0;
+        margin-left: 0;
+        left: auto;
+        right: 0;
+    }
+    
+    .be-active-image {
+        background-image: url(img/be-active.jpg);
+        height: 584px;
+    }
+
+    .be-active-box, .find-contact-box, .work-it-box {
+        padding-left: 4.43vw;
+        padding-right: 4.43vw;
+        padding-bottom: 85px;
+        padding-top: 65px;
+    }
+
+    .be-active, .find-contact, .work-it {
+        font-size: 80px;
+        display: block;
+    }
+
+    .be-active-text, .find-contact-text, .work-it-text {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 15px;
+    }
+
+    .be-active-number-box, .find-contact-number-box, .work-it-number-box {
+        width: 117px;
+        height: 117px;
+        bottom: -35px;
+        left: 4.43vw; 
+    }
+
+    .be-active-number, .find-contact-number, .work-it-number {
+        font-size: 24px;
+    }
+
+    .be-active-number::after, .find-contact-number::after, .work-it-number::after {
+        width: 28px;
+        height: 5px;
+    }
+
+    .find-contact-image {
+        background-image: url(img/find-contact.jpg);
+        height: 565px;
+    }
+
+    .work-it-image {
+        background-image: url(img/work-it.jpg);
+        height: 565px;
+    }
+    
+    .footer-container {
+        height: 957px;
+        padding-top: 125px;
+        background-image: url(img/game_1280.jpg);
+    }
+
+    .footer-text {
+        margin-top: 42px;
+}
+
+    .logo-box {
+        width: 138px;
+        height: 138px;
+    }
+
+    .sur-logo {
+        width: 100px;
+        height: 87px;
+    }
+    
+    .buttons-bottom {
+        margin-top: 267px;
+    }
+
+    .surface-logo-bottom {
+        margin-top: 70px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 690px) {
+    .footer-text-download {
+        font-size: 70px;
+    }
+
+    .footer-text-show {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 691px) and (max-width: 960px) {
+    .footer-text-download {
+        font-size: 80px;
+    }
+
+    .footer-text-show {
+        font-size: 36px;
+    }
+}
+    
+@media (min-width: 961px) {
+    .container {
+        height: 960px;
+        background-image: url(img/football_1920.jpg);
+        max-width: 1920px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .surface-logo {
+        margin-top: 44px;
+        width: 197px;
+    }
+    
+    .header-text-be-recruited, .header-text-play {
+        font-size: 90px;
+    }
+    
+    .header-text-play>br {
+        display: none;
+    }
+    
+    .header-text-be-recruited {
+        margin-top: 160px;
+        margin-left: 10%;
+    }
+
+    .header-text-play {
+        margin-left: 33.5%;
+    }
+    
+    .buttons {
+        margin-top: 180px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .app-store-button, .google-play-button  {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px;
+        width: 310px;
+        height: 78px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .google-play-button {
+        margin-top: 0;
+        margin-left: 45px;
+    }
+    
+    .icon {
+        width: 41px;
+        height: 50px;
+    }
+    
+    .download {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    
+    .athlets-container, .players-container {
+        margin-top: 0;
+        padding-top: 80px;
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .athlets-header::before {
+        background-image: url(img/footballer_566.png);
+        width: 566px;
+        height: 908px;
+        top: -70px;
+        left: -600px;
+        margin-left: 0;
+    }
+
+    .athlets-header {
+        font-size: 80px;
+        margin-left: 52.5vw;
+    }
+
+    .players-header {
+        font-size: 80px;
+        margin-left: 10vw;
+    }
+    
+    .connection-box {
+        margin-top: 30px;
+        background-color: #ffffff;
+    }
+    
+    .connection-box, .collaboration-box, .growth-box {
+        padding-left: 52.5vw;
+        padding-right: 10vw;
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+    
+    .connection-number, .collaboration-number, .growth-number {
+        font-size: 18px;
+    }
+
+    .connection-number::after, .collaboration-number::after {
+        width: 20px;
+        height: 5px;
+    }
+
+    .growth-number-player {
+        color: #8765dd;
+    }
+    
+    .growth-number::after {
+        width: 20px;
+        height: 5px;
+    }
+
+    .connection, .collaboration, .growth {
+        font-size: 32px;
+        position: relative;
+        z-index: 6;
+    }
+
+    .connection-text, .collaboration-text, .growth-text  {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .growth-text {
+        color: #ffffff;
+    }
+    
+    .connection-box-player, .collaboration-box-player, .growth-box-player {
+        padding-left: 10vw;
+        padding-right: 50.5vw;
+        padding-top: 50px;
+        padding-bottom: 55px;
+    }
+    
+    .growth-box-player {
+        background-color: #090c35;
+    }
+    
+    .players-header::before {
+        background-image: url(img/basketballer_991.png);
+        width: 52vw;
+        height: 815px;
+        top: -70px;
+        margin-left: 0;
+        left: auto;
+        right: 0;
+    }
+    
+    .activities-container {
+        max-width: 1920px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .be-active-container, .work-it-container {
+        display: flex;
+    }
+    
+    .find-contact-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .be-active-image {
+        background-image: url(img/be-active_1024.jpg);
+        height: 730px;
+        width: 50%;
+    }
+
+    .be-active-box, .work-it-box {
+        padding-left: 6.66vw;
+        padding-right: 9.38vw;
+        width: 50%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            
+    }
+
+    .find-contact-box {
+        padding-left: 10vw;
+        padding-right: 6.1vw;
+        width: 50%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .be-active, .find-contact, .work-it {
+        font-size: 80px;
+        display: block;
+        line-height: 80px;
+    }
+
+    .be-active-text, .find-contact-text, .work-it-text {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 30px;
+    }
+
+    .be-active-number-box, .work-it-number-box {
+        width: 168px;
+        height: 154px;
+        top: calc(50% - 135px);
+        left: calc(50vw - 95px);
+        
+    }
+    
+    .find-contact-number-box {
+        width: 168px;
+        height: 154px;
+        top: calc(50% - 135px);
+        left: -90px;
+    }
+
+    .be-active-number, .find-contact-number, .work-it-number {
+        font-size: 24px;
+    }
+
+    .be-active-number::after, .find-contact-number::after, .work-it-number::after {
+        width: 28px;
+        height: 5px;
+    }
+
+    .find-contact-image {
+        background-image: url(img/find-contact_1024.jpg);
+        height: 730px;
+        width: 50%;
+    }
+
+    .work-it-image {
+        background-image: url(img/work-it_1024.jpg);
+        height: 730px;
+        width: 50%;
+    }
+    
+    .footer-container {
+        height: 960px;
+        padding-top: 230px;
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url(img/game_1920.jpg);
+    }
+
+    .logo-desktop {
+        display: flex;
+    }
+    
+    .footer-text {
+        margin-top: 0;
+        width: auto;
+        margin-right: auto;
+}
+
+    .logo-box {
+        width: 130px;
+        height: 137px;
+        margin-left: auto;
+        margin-right: 35px;
+    }
+
+    .sur-logo {
+        width: 100px;
+        height: 87px;
+    }
+    
+    .buttons-bottom {
+        margin-top: 147px;
+    }
+
+    .surface-logo-bottom {
+        margin-top: 250px;
+    }
+    
+    .footer-text-download {
+        font-size: 80px;
+    }
+
+    .footer-text-show {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1024px) {
+    .header-text-be-recruited, .header-text-play {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1280px) {  
+    .be-active, .find-contact, .work-it {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    
+    .be-active-number-box, .work-it-number-box {
+        width: 117px;
+        height: 117px;
+        top: calc(50% - 60px);
+        left: calc(50vw - 70px);
+    }
+    
+    .find-contact-number-box {
+        width: 117px;
+        height: 117px;
+        top: calc(50% - 135px);
+        left: -60px;
+    }
+}
