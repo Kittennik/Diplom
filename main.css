@@ -1,24 +1,27 @@
-body {
-    margin: 0;
-}
-
 @font-face {
-    font-family: OpenSans-Bold;
+    font-family: OpenSans;
     src: url(fonts/OpenSans-Bold.ttf);
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: OpenSans-Regular;
+    font-family: OpenSans;
     src: url(fonts/OpenSans-Regular.ttf);
     font-weight: 400;
     font-style: normal;
 }
 
+body {
+    margin: 0;
+    font-family: OpenSans;
+    letter-spacing: 0.08ex;
+}
+
 .container {
     position: relative;
-    height: 570px;
+    height: 100vh;
+    min-height: 568px;
     width: 100%;
     min-width: 320px;
     background-image: url("img/football_767.jpg");
@@ -57,22 +60,25 @@ h1, h2 {
     width: 135px;
 }
 
+h1 {
+    display: flex;
+    flex-direction: column;
+}
+
 .header-text {
     z-index: 5;
     position: relative;
-    display: flex;
-    flex-direction: column;
 }
 
 .header-text-be-recruited, .header-text-play {
     color: #ffffff;
     font-size: 28px;
     text-transform: uppercase;
-    font-family: OpenSans-Bold;
+    font-weight: 700;
 }
 
 .header-text-be-recruited {
-    margin-top: 120px;
+    margin-top: 21.12676vh;
     margin-bottom: 10px;
     margin-left: 6.25%;
 }
@@ -83,7 +89,7 @@ h1, h2 {
 
 .buttons {
     z-index: 5;
-    margin-top: 80px;
+    margin-top: 14.0845vh;
     position: relative;
 }
 
@@ -118,11 +124,10 @@ h1, h2 {
     font-size: 8px;
     text-transform: uppercase;
     display: inline-block;
-    font-family: OpenSans-Regular;
 }
 
 .google-play-button {
-    margin-top: 15px;
+    margin-top: 13px;
 }
 
 h3 {
@@ -139,19 +144,18 @@ h3 {
 .athlets-header::before {
     background-image: url(img/footballer_192.png);
     position: absolute;
-    width: 100%;
     height: 281px;
     content: "";
     z-index: 5;
     background-repeat: no-repeat;
     top: 75px;
     left: 50%;
-    margin-left: -96px;
+    margin-left: -98px;
     width: 192px;
 }
 
 .athlets-header, .players-header {
-    font-family: OpenSans-Bold;
+    font-weight: 700;
     font-size: 50px;
     text-transform: uppercase;
     color: #e7e7e7;
@@ -160,11 +164,11 @@ h3 {
 }
 
 .connection-box {
-    margin-top: 250px;
+    margin-top: 261px;
     background-color: #fafafa;
     padding-left: 6.25%;
     padding-right: 6.25%;
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 50px;
     box-sizing: border-box;
 }
@@ -173,19 +177,34 @@ h3 {
     background-color: #f5f4f9;
     padding-left: 6.25%;
     padding-right: 6.25%;
-    padding-top: 50px;
+    padding-top: 54px;
     padding-bottom: 50px;
     box-sizing: border-box;
+}
+
+.collaboration-box-player {
+    padding-bottom: 52px;
+}
+
+.connection-box-player {
+    padding-bottom: 51px;
 }
 
 .growth-box {
     background-color: #5e42b0;
     padding-left: 6.25%;
     padding-right: 6.25%;
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 50px;
     box-sizing: border-box;
 }
+
+.growth-box-player {
+    background-color: #090c35;
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+    
 
 .conection-header, .collaboration-header, .growth-header {
     display: flex;
@@ -194,7 +213,7 @@ h3 {
 .connection-number, .collaboration-number, .growth-number {
     font-size: 14px;
     color: #000000;
-    font-family: OpenSans-Bold;
+    font-weight: 700;
 }
 
 .connection-number::after, .collaboration-number::after {
@@ -215,10 +234,14 @@ h3 {
     border-radius: 25%;
 }
 
+.growth-number-player {
+        color: #8765dd;
+    }
+
 .connection, .collaboration, .growth {
     font-size: 23px;
     color: #c1c1c1;
-    font-family: OpenSans-Bold;
+    font-weight: 700;
     text-transform: uppercase;
     margin-left: 9px;
 }
@@ -227,9 +250,16 @@ h3 {
     margin-top: 18px;
     font-size: 15px;
     color: #000000;
-    font-family: OpenSans-Regular;
     line-height: 18px;
 }
+
+.connection-text-player {
+    margin-top: 17px;
+}
+
+.growth-text-player {
+        color: #ffffff;
+    }
 
 .players-header::before {
     background-image: url(img/basketballer_302.png);
@@ -239,9 +269,9 @@ h3 {
     content: "";
     z-index: 5;
     background-repeat: no-repeat;
-    top: 75px;
+    top: 76px;
     left: 50%;
-    margin-left: -170px;
+    margin-left: -160px;
 }
 
 .activities-container {
@@ -250,24 +280,40 @@ h3 {
 }
 
 .be-active-image {
-    background-image: url(img/be-active_640.jpg);
+    /*background-image: url(img/be-active_640.jpg);*/
     height: 350px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
     min-width: 320px;
-    background-position: center;
+    /*background-position: center;*/
     position: relative;
+}
+
+.be-active-picture, .find-contact-picture, .work-it-picture {
+    object-fit: cover;
+    object-position: center;
+    height: 350px;
+    min-width: 320px;
+    width: 100%;
 }
 
 .be-active-box, .find-contact-box, .work-it-box {
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 75px;
+    padding-bottom: 61px;
     padding-top: 25px;
 }
 
+.find-contact-box {
+    padding-bottom: 63px;
+}
+
+.work-it-box {
+    padding-bottom: 52px;
+}
+
 .be-active, .find-contact, .work-it {
-    font-family: OpenSans-Bold;
+    font-weight: 700;
     font-size: 28px;
     color: #e7e7e7;
     text-transform: uppercase;
@@ -275,12 +321,19 @@ h3 {
 }
 
 .be-active-text, .find-contact-text, .work-it-text {
-    font-family: OpenSans-Regular;
     font-size: 16px;
     color: #000000;
     line-height: 20px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 14px;
+}
+
+.find-contact-text {
+    margin-top: 15px;
+}
+
+.work-it-text {
+    margin-top: 15px;
 }
 
 .be-active-number-box, .find-contact-number-box, .work-it-number-box {
@@ -289,14 +342,14 @@ h3 {
     background-color: #5e42b0;
     display: flex;
     position: absolute;
-    bottom: -10px;
+    bottom: -12px;
     left: 20px; 
     justify-content: center;
     align-items: center;
 }
 
 .be-active-number, .find-contact-number, .work-it-number {
-    font-family: OpenSans-Bold;
+    font-weight: 700;
     font-size: 14px;
     color: #f5f6f7;
     
@@ -312,29 +365,30 @@ h3 {
 }
 
 .find-contact-image {
-    background-image: url(img/find-contact_640.jpg);
+    /*background-image: url(img/find-contact_640.jpg);*/
     height: 350px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
     min-width: 320px;
-    background-position: center;
+    /*background-position: center;*/
     position: relative;
 }
 
 .work-it-image {
-    background-image: url(img/work-it_640.jpg);
+    /*background-image: url(img/work-it_640.jpg);*/
     height: 350px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-repeat: no-repeat;
+    background-size: cover;*/
     min-width: 320px;
-    background-position: center;
+    /*background-position: center;*/
     position: relative;
 }
 
 .footer-container {
     width: 100%;
     min-width: 320px;
-    height: 570px;
+    min-height: 570px;
+    height: 100vh;
     background-image: url(img/game_767.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -364,19 +418,20 @@ h3 {
     text-transform: uppercase;
     z-index: 5;
     position: relative;
-    margin-top: 48px;
+    margin-top: 53px;
 }
 
 .footer-text-download {
-    font-family: OpenSans-Bold;
+    font-weight: 700;
     font-size: 32px;
     color: #ffffff;
+    line-height: 30px;
 }
 
 .footer-text-show {
-    font-family: OpenSans-Regular;
     font-size: 14px;
     color: #9b8ec1;
+    margin-top: 7px;
 }
 
 .logo-box {
@@ -400,11 +455,11 @@ h3 {
 }
     
 .buttons-bottom {
-    margin-top: 70px;
+    margin-top: 56px;
 }
 
 .surface-logo-bottom {
-    margin-top: 82px;
+    margin-top: 81px;
 }
 
 @media (min-width: 461px) and (max-width: 640px) {
@@ -421,7 +476,7 @@ h3 {
         justify-content: center;
     }
     
-    .be-active-image {
+    /*.be-active-image {
         background-image: url(img/be-active.jpg);
     }
     
@@ -431,7 +486,7 @@ h3 {
     
     .work-it-image {
         background-image: url(img/work-it.jpg);
-    }
+    }*/
     
     .footer-container {
         background-image: url(img/game_1280.jpg);
@@ -439,9 +494,13 @@ h3 {
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
+    body {
+       letter-spacing: normal; 
+    }
+    
     .container {
-        height: 960px;
         background-image: url("img/football_1280.jpg");
+        min-height: 960px;
     }
     
     .surface-logo {
@@ -451,19 +510,22 @@ h3 {
     
     .header-text-be-recruited, .header-text-play {
         font-size: 64px;
+        letter-spacing: 3px;
     }
     
     .header-text-be-recruited {
-        margin-top: 160px;
+        margin-top: 157px;
         margin-left: 11.5%;
     }
 
     .header-text-play {
         margin-left: 25.5%;
+        margin-top: -15px;
+        line-height: 78px;
     }
     
     .buttons {
-        margin-top: 287px;
+        margin-top: 294px;
         display: flex;
         justify-content: space-between;
         margin-left: 7%;
@@ -474,7 +536,7 @@ h3 {
         margin-left: 0;
         margin-right: 0;
         padding: 15px;
-        width: 40vw;
+        width: 41vw;
         height: 78px;
         justify-content: center;
         align-items: center;
@@ -486,12 +548,13 @@ h3 {
     }
     
     .icon {
-        width: 39px;
-        height: 47px;
+        width: 44px;
+        height: 50px;
     }
     
     .download {
         font-size: 14px;
+        margin-left: 10px;
     }
     
     .athlets-container, .players-container {
@@ -504,14 +567,15 @@ h3 {
         width: 497px;
         height: 699px;
         content: "";
-        top: 35px;
-        left: -450px;
+        top: 41px;
+        left: -455px;
         margin-left: 0;
     }
 
     .athlets-header {
         font-size: 80px;
         margin-left: 38.4vw;
+        margin-top: 5px;
     }
 
     .players-header {
@@ -520,19 +584,27 @@ h3 {
     }
     
     .connection-box {
-        margin-top: 10px;
+        margin-top: 7px;
         background-color: #ffffff;
     }
     
     .connection-box, .collaboration-box, .growth-box {
         padding-left: 38.4vw;
         padding-right: 4.55vw;
-        padding-top: 25px;
+        padding-top: 35px;
         padding-bottom: 30px;
     }
     
+    .connection-box {
+        padding-top: 25px;
+    }
+    
+    .collaboration-box {
+        padding-top: 35px;
+    }
+    
     .connection-number, .collaboration-number, .growth-number {
-        font-size: 18px;
+        font-size: 18px;      
     }
 
     .connection-number::after, .collaboration-number::after {
@@ -540,10 +612,6 @@ h3 {
         height: 5px;
     }
 
-    .growth-number-player {
-        color: #8765dd;
-    }
-    
     .growth-number::after {
         width: 20px;
         height: 5px;
@@ -553,16 +621,30 @@ h3 {
         font-size: 32px;
         position: relative;
         z-index: 6;
+        letter-spacing: 2px;
     }
-
+        
     .connection-text, .collaboration-text, .growth-text  {
         font-size: 16px;
         line-height: 28px;
-        line-height: 28px;
+        letter-spacing: 0.7px;
+    }
+    
+    .connection-text {
+        margin-top: 15px;
     }
     
     .growth-text {
         color: #ffffff;
+        margin-top: 15px;
+    }
+    
+    .growth-text-player {
+        font-size: 18px;
+    }
+    
+    .collaboration-text {
+        margin-top: 14px;
     }
     
     .connection-box-player, .collaboration-box-player, .growth-box-player {
@@ -570,43 +652,77 @@ h3 {
         padding-right: 44.27vw;
     }
     
+    .collaboration-box-player {
+        padding-bottom: 32px;
+    }
+   
     .growth-box-player {
-        background-color: #090c35;
+        padding-bottom: 33px;
+    }
+    
+    .players-container {
+        padding-top: 60px;
     }
     
     .players-header::before {
         background-image: url(img/basketballer_436.png);
         width: 436px;
         height: 565px;
-        top: 0;
+        top: -16px;
         margin-left: 0;
         left: auto;
         right: 0;
     }
     
     .be-active-image {
-        background-image: url(img/be-active.jpg);
+        /*background-image: url(img/be-active.jpg);*/
         height: 584px;
+    }
+    
+    .be-active-picture, .find-contact-picture, .work-it-picture {
+        height: 584px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
     }
 
     .be-active-box, .find-contact-box, .work-it-box {
         padding-left: 4.43vw;
         padding-right: 4.43vw;
-        padding-bottom: 85px;
+        padding-bottom: 76px;
         padding-top: 65px;
     }
 
+    .find-contact-box {
+        padding-bottom: 83px;
+    }
+    
+    .work-it-box {
+        padding-top: 78px;
+        padding-bottom: 83px;
+    }
+    
     .be-active, .find-contact, .work-it {
         font-size: 80px;
         display: block;
+        margin-left: -4px;
     }
 
     .be-active-text, .find-contact-text, .work-it-text {
         font-size: 24px;
         line-height: 28px;
-        margin-top: 15px;
+        margin-top: 11px;
+        letter-spacing: 1px;
     }
 
+  .find-contact-text .work-it-text {
+        margin-top: 13px;
+    }
+    
+    .work-it-text {
+        margin-top: 10px;
+    }
+    
     .be-active-number-box, .find-contact-number-box, .work-it-number-box {
         width: 117px;
         height: 117px;
@@ -614,6 +730,14 @@ h3 {
         left: 4.43vw; 
     }
 
+    .find-contact-number-box {
+        bottom: -40px;
+    }
+    
+    .work-it-number-box  {
+        bottom: -45px;
+    }
+    
     .be-active-number, .find-contact-number, .work-it-number {
         font-size: 24px;
     }
@@ -624,25 +748,37 @@ h3 {
     }
 
     .find-contact-image {
-        background-image: url(img/find-contact.jpg);
+        /*background-image: url(img/find-contact.jpg);*/
         height: 565px;
     }
 
     .work-it-image {
-        background-image: url(img/work-it.jpg);
+        /*background-image: url(img/work-it.jpg);*/
         height: 565px;
     }
     
     .footer-container {
-        height: 957px;
         padding-top: 125px;
         background-image: url(img/game_1280.jpg);
     }
 
     .footer-text {
-        margin-top: 42px;
-}
+        margin-top: 99px;
+    }
+    .footer-text-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .footer-text-download {
+        letter-spacing: 3px;
+    }
+    
+    .footer-text-show {
+        margin-top: 33px;
+    }
+    
     .logo-box {
         width: 138px;
         height: 138px;
@@ -654,11 +790,11 @@ h3 {
     }
     
     .buttons-bottom {
-        margin-top: 267px;
+        margin-top: 241px;
     }
 
     .surface-logo-bottom {
-        margin-top: 70px;
+        margin-top: 50px;
     }
 }
 
@@ -684,20 +820,22 @@ h3 {
     
 @media (min-width: 961px) {
     .container {
-        height: 960px;
         background-image: url(img/football_1920.jpg);
         max-width: 1920px;
         margin-right: auto;
         margin-left: auto;
+        min-height: 960px;
     }
     
     .surface-logo {
-        margin-top: 44px;
-        width: 197px;
+        margin-top: 45px;
+        width: 190px;
+        margin-right: -25px;
     }
     
-    .header-text-be-recruited, .header-text-play {
+    .header-text-play {
         font-size: 90px;
+        line-height: 75px;
     }
     
     .header-text-play>br {
@@ -705,16 +843,21 @@ h3 {
     }
     
     .header-text-be-recruited {
-        margin-top: 160px;
-        margin-left: 10%;
+        margin-top: 27.2vh;
+        margin-left: 9.8%;
+        letter-spacing: 4px;
+        font-size: 90px;
+        line-height: 110px;
     }
 
     .header-text-play {
         margin-left: 33.5%;
+        letter-spacing: 4.3px;
+        margin-top: -5px;
     }
     
     .buttons {
-        margin-top: 180px;
+        margin-top: 22.5vh;
         display: flex;
         justify-content: center;
         margin-left: auto;
@@ -725,6 +868,7 @@ h3 {
         margin-left: 0;
         margin-right: 0;
         padding: 15px;
+        padding-bottom: 22px;
         width: 310px;
         height: 78px;
         box-sizing: border-box;
@@ -732,19 +876,35 @@ h3 {
         align-items: center;
     }
     
+    .google-play-button  {
+        padding-bottom: 15px;
+    }
+    
     .google-play-button {
         margin-top: 0;
-        margin-left: 45px;
+        margin-left: 52px;
     }
     
     .icon {
-        width: 41px;
-        height: 50px;
+        width: 51px;
+        height: 60px;
+    }
+    
+    .icon-g {
+        width: 46px;
+    }
+    
+    .store-text {
+        margin-left: 20px;
     }
     
     .download {
         font-size: 14px;
-        margin-left: 20px;
+        margin-top: 8px;
+    }
+    
+    .download-g {
+        margin-top: 4px;
     }
     
     .athlets-container, .players-container {
@@ -755,12 +915,16 @@ h3 {
         margin-right: auto;
     }
 
+    .players-container {
+        padding-top: 90px;
+    }
+
     .athlets-header::before {
         background-image: url(img/footballer_566.png);
         width: 566px;
         height: 908px;
-        top: -70px;
-        left: -600px;
+        top: -63px;
+        left: -620px;
         margin-left: 0;
     }
 
@@ -771,7 +935,7 @@ h3 {
 
     .players-header {
         font-size: 80px;
-        margin-left: 10vw;
+        margin-left: 9.7vw;
     }
     
     .connection-box {
@@ -781,9 +945,19 @@ h3 {
     
     .connection-box, .collaboration-box, .growth-box {
         padding-left: 52.5vw;
-        padding-right: 10vw;
+        padding-right: 9.3vw;
         padding-top: 45px;
         padding-bottom: 50px;
+    }
+    
+    .collaboration-box {
+        padding-top: 53px;
+        padding-bottom: 54px;
+    }
+    
+    .growth-box {
+        padding-top: 53px;
+        padding-bottom: 51px;
     }
     
     .connection-number, .collaboration-number, .growth-number {
@@ -808,11 +982,17 @@ h3 {
         font-size: 32px;
         position: relative;
         z-index: 6;
+        letter-spacing: 4.5px;
     }
 
     .connection-text, .collaboration-text, .growth-text  {
         font-size: 20px;
         line-height: 28px;
+        letter-spacing: 1px;
+    }
+    
+    .collaboration-text-player  {
+        margin-top: 29px;
     }
     
     .growth-text {
@@ -821,23 +1001,33 @@ h3 {
     
     .connection-box-player, .collaboration-box-player, .growth-box-player {
         padding-left: 10vw;
-        padding-right: 50.5vw;
+        padding-right: 48vw;
         padding-top: 50px;
         padding-bottom: 55px;
     }
     
+    .collaboration-box-player {
+        padding-bottom: 78px;
+    }
+    
     .growth-box-player {
         background-color: #090c35;
+        padding-top: 54px;
+        padding-bottom: 55px;
     }
     
     .players-header::before {
         background-image: url(img/basketballer_991.png);
         width: 52vw;
         height: 815px;
-        top: -70px;
+        top: -65px;
         margin-left: 0;
         left: auto;
-        right: 0;
+        right: 100px;
+    }
+    
+    .growth-text-player {
+        letter-spacing: 0.6px;
     }
     
     .activities-container {
@@ -856,20 +1046,26 @@ h3 {
     }
     
     .be-active-image {
-        background-image: url(img/be-active_1024.jpg);
+        /*background-image: url(img/be-active_1024.jpg);*/
         height: 730px;
         width: 50%;
+    }
+    
+    .be-active-picture, .find-contact-picture, .work-it-picture {
+        height: 730px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
     }
 
     .be-active-box, .work-it-box {
         padding-left: 6.66vw;
-        padding-right: 9.38vw;
+        padding-right: 8.38vw;
         width: 50%;
         box-sizing: border-box;
-        display: flex;
+        /*display: flex;
         flex-direction: column;
-        justify-content: center;
-            
+        justify-content: center;*/
     }
 
     .find-contact-box {
@@ -877,36 +1073,52 @@ h3 {
         padding-right: 6.1vw;
         width: 50%;
         box-sizing: border-box;
-        display: flex;
+        /*display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: center;*/
     }
     
     .be-active, .find-contact, .work-it {
         font-size: 80px;
         display: block;
         line-height: 80px;
+        margin-top: 225px;
     }
 
+    .find-contact {
+        letter-spacing: normal;
+    }
+    
     .be-active-text, .find-contact-text, .work-it-text {
         font-size: 24px;
         line-height: 28px;
-        margin-top: 30px;
+        margin-top: 102px;
+        margin-left: 5px;
+        letter-spacing: 1.3px;
     }
 
+    .find-contact-text {
+        margin-top: 62px;
+        margin-left: 0;
+        letter-spacing: 1.1px;
+    }
+    
+    .work-it-text {
+       margin-top: 98px; 
+    }
+    
     .be-active-number-box, .work-it-number-box {
         width: 168px;
         height: 154px;
-        top: calc(50% - 135px);
-        left: calc(50vw - 95px);
-        
+        top: calc(50% - 152px);
+        left: calc(100% - 75px);
     }
     
     .find-contact-number-box {
         width: 168px;
         height: 154px;
-        top: calc(50% - 135px);
-        left: -90px;
+        top: calc(50% - 152px);
+        left: -78px;
     }
 
     .be-active-number, .find-contact-number, .work-it-number {
@@ -919,19 +1131,18 @@ h3 {
     }
 
     .find-contact-image {
-        background-image: url(img/find-contact_1024.jpg);
+        /*background-image: url(img/find-contact_1024.jpg);*/
         height: 730px;
         width: 50%;
     }
 
     .work-it-image {
-        background-image: url(img/work-it_1024.jpg);
+        /*background-image: url(img/work-it_1024.jpg);*/
         height: 730px;
         width: 50%;
     }
     
     .footer-container {
-        height: 960px;
         padding-top: 230px;
         max-width: 1920px;
         margin-left: auto;
@@ -941,6 +1152,9 @@ h3 {
 
     .logo-desktop {
         display: flex;
+        padding-left: 26vw;
+        padding-right: 24.5vw;
+        box-sizing: border-box;
     }
     
     .footer-text {
@@ -952,8 +1166,6 @@ h3 {
     .logo-box {
         width: 130px;
         height: 137px;
-        margin-left: auto;
-        margin-right: 35px;
     }
 
     .sur-logo {
@@ -962,19 +1174,28 @@ h3 {
     }
     
     .buttons-bottom {
-        margin-top: 147px;
+        margin-top: 130px;
     }
 
     .surface-logo-bottom {
-        margin-top: 250px;
+        margin-top: 260px;
+    }
+    
+    .footer-text-box {
+        padding-left: 10px;
+        box-sizing: border-box;
     }
     
     .footer-text-download {
         font-size: 80px;
+        margin-top: 31px;
+        letter-spacing: 4px;
     }
 
     .footer-text-show {
         font-size: 30px;
+        margin-top: 27px;
+        letter-spacing: normal;
     }
 }
 
@@ -1002,5 +1223,57 @@ h3 {
         height: 117px;
         top: calc(50% - 135px);
         left: -60px;
+    }
+}
+
+@media (min-width: 1921px) {
+    .athlets-header {
+        margin-left: 52.5%;
+    }
+
+    .players-header {
+        margin-left: 10%;
+    }
+    
+    .connection-box, .collaboration-box, .growth-box {
+        padding-left: 52.5%;
+        padding-right: 10%;
+    }
+    
+    .connection-box-player, .collaboration-box-player, .growth-box-player {
+        padding-left: 10%;
+        padding-right: 50.5%;
+    }
+    
+    .be-active-box, .work-it-box {
+        padding-left: 6.66%;
+        padding-right: 9.38%;
+    }
+    
+    .find-contact-box {
+        padding-left: 10%;
+        padding-right: 6.1%;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1919px) {
+    .players-header::before {
+        background-image: url(img/basketballer_991.png);
+        width: 52vw;
+        height: 815px;
+        top: -55px;
+        margin-left: 0;
+        left: auto;
+        right: 0;
+    }
+    
+    .logo-desktop {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .logo-box {
+        margin-left: auto;
+        margin-right: 20px;
     }
 }
