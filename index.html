@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Дипломная работа на курсе "Адаптивная верстка"</title>
         <meta name="description" content="Дипломная работа на курсе Адаптивная верстка">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
@@ -15,8 +16,9 @@
                     </a>
                 </div>
                 <div class="header-text">
-                    <h1 class="header-text-be-recruited">be recruited</h1>
-                    <h2 class="header-text-play">play college <br> sports</h2>
+                    <h1>
+                        <span class="header-text-be-recruited">be recruited</span>
+                        <span class="header-text-play">play college <br> sports</span></h1>
                 </div>
                 <div class="buttons">
                     <a class="app-store" href="#0">
@@ -31,11 +33,11 @@
                     </a>
                     <a class="google-play" href="#0">
                         <div class="google-play-button">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.499 505.499">
+                            <svg class="icon icon-g" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.499 505.499">
                                 <path d="M471.497 234.466l-92.082-53.135-75.733 73.208 69.215 66.907 98.6-56.91c5.43-3.133 8.677-8.756 8.677-15.03 0-6.275-3.245-11.898-8.677-15.04zM363.785 172.3l-101.332-58.497L40.375 0l250.828 242.47M44.063 505.5l218.77-120.512 94.435-54.515-66.065-63.87M25.56 9.815l-.236 489.67L278.72 254.534"/>
                             </svg>
                             <div class="store-text">
-                                <span class="download">get it on<br><b>google play</b></span>
+                                <span class="download download-g">get it on<br><b>google play</b></span>
                             </div>
                         </div>
                     </a>
@@ -44,11 +46,11 @@
         </header>
         <main>
             <section class="athlets-container">
-                <h3 class="athlets-header">athlets</h3>
+                <h2 class="athlets-header">athlets</h2>
                 <div class="connection-box">
                     <div class="conection-header">
                         <span class="connection-number">01</span>
-                        <span class="connection">connection</span>
+                        <h3 class="connection">connection</h3>
                     </div>
                     <div class="connection-text">
                         <span>Connect with coaches directly, you can ping coaches to view profile.</span>
@@ -57,7 +59,7 @@
                 <div class="collaboration-box">
                     <div class="collaboration-header">
                         <span class="collaboration-number">02</span>
-                        <span class="collaboration">collaboration</span>
+                        <h3 class="collaboration">collaboration</h3>
                     </div>
                     <div class="collaboration-text">
                         <span>Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</span>
@@ -66,7 +68,7 @@
                 <div class="growth-box">
                     <div class="growth-header">
                         <span class="growth-number">03</span>
-                        <span class="growth">growth</span>
+                        <h3 class="growth">growth</h3>
                     </div>
                     <div class="growth-text">
                         <span>Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc</span>
@@ -74,31 +76,31 @@
                 </div>
             </section>
             <section class="players-container">
-                <h3 class="players-header">players</h3>
+                <h2 class="players-header">players</h2>
                 <div class="connection-box connection-box-player">
                     <div class="conection-header">
                         <span class="connection-number">01</span>
-                        <span class="connection">connection</span>
+                        <h3 class="connection">connection</h3>
                     </div>
-                    <div class="connection-text">
+                    <div class="connection-text connection-text-player">
                         <span>Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</span>
                     </div>
                 </div>
                 <div class="collaboration-box collaboration-box-player">
                     <div class="collaboration-header">
                         <span class="collaboration-number">02</span>
-                        <span class="collaboration">collaboration</span>
+                        <h3 class="collaboration">collaboration</h3>
                     </div>
-                    <div class="collaboration-text">
-                        <span>Work with recruiter to increase your chances of findingtalented athlete.</span>
+                    <div class="collaboration-text collaboration-text-player">
+                        <span>Work with recruiter to increase your chances of finding talented athlete.</span>
                     </div>
                 </div>
                 <div class="growth-box growth-box-player">
                     <div class="growth-header">
                         <span class="growth-number growth-number-player">03</span>
-                        <span class="growth">growth</span>
+                        <h3 class="growth">growth</h3>
                     </div>
-                    <div class="growth-text">
+                    <div class="growth-text growth-text-player">
                         <span>Save your time, recruit proper athlets for your team. </span>
                     </div>
                 </div>
@@ -106,35 +108,56 @@
             <section class="activities-container">
                 <div class="be-active-container">
                     <div class="be-active-image">
+                        <picture>
+                            <source media="(max-width: 460px)" srcset="img/be-active_640.jpg">
+                            <source media="(min-width: 461px) and (max-width: 768px)" srcset="img/be-active.jpg">
+                            <source media="(min-width: 769px) and (max-width: 960px)" srcset="img/be-active_960.jpg">
+                            <source media="(min-width: 961px)" srcset="img/be-active_960.jpg">
+                            <img class="be-active-picture" src="img/be-active_1024.jpg" alt="Be active">
+                        </picture>
                         <div class="be-active-number-box">
                             <span class="be-active-number">01</span>
                         </div>
                     </div>
                     <div class="be-active-box">
-                        <span class="be-active">be active</span>
-                        <span class="be-active-text">Post videos with your skills, Like and follow others to be more popular.</span>
+                        <h3 class="be-active">be active</h3>
+                        <p class="be-active-text">Post videos with your skills, Like and follow others to be more popular.</p>
                     </div>
                 </div>
                 <div class="find-contact-container">
                     <div class="find-contact-image">
+                        <picture>
+                            <source media="(max-width: 460px)" srcset="img/find-contact_640.jpg">
+                            <source media="(min-width: 461px) and (max-width: 768px)" srcset="img/find-contact.jpg">
+                            <source media="(min-width: 769px) and (max-width: 960px)" srcset="img/find-contact_960.jpg">
+                            <source media="(min-width: 961px)" srcset="img/find-contact_1024.jpg">
+                            <img class="find-contact-picture" src="img/find-contact_1024.jpg" alt="Be active">
+                        </picture>
                         <div class="find-contact-number-box">
                             <span class="find-contact-number">02</span>
                         </div>
                     </div>
                     <div class="find-contact-box">
-                        <span class="find-contact">find contact</span>
-                        <span class="find-contact-text">Contact others to find right coach or athlete you are looking for. </span>
+                        <h3 class="find-contact">find contact</h3>
+                        <p class="find-contact-text">Contact others to find right coach or athlete you are looking for. </p>
                     </div>
                 </div>
                 <div class="work-it-container">
                     <div class="work-it-image">
+                        <picture>
+                            <source media="(max-width: 460px)" srcset="img/work-it_640.jpg">
+                            <source media="(min-width: 461px) and (max-width: 768px)" srcset="img/work-it.jpg">
+                            <source media="(min-width: 769px) and (max-width: 960px)" srcset="img/work-it_960.jpg">
+                            <source media="(min-width: 961px)" srcset="img/work-it_1024.jpg">
+                            <img class="work-it-picture" src="img/work-it_1024.jpg" alt="Be active">
+                        </picture>
                         <div class="work-it-number-box">
                             <span class="work-it-number">03</span>
                         </div>
                     </div>
                     <div class="work-it-box">
-                        <span class="work-it">work it</span>
-                        <span class="work-it-text">Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.</span>
+                        <h3 class="work-it">work it</h3>
+                        <p class="work-it-text">Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.</p>
                     </div>
                 </div>
             </section>
@@ -151,8 +174,10 @@
                         </svg>
                     </div>
                     <div class="footer-text">
-                        <span class="footer-text-download">download app</span>
-                        <span class="footer-text-show">Show everyone what you can do!</span>
+                        <div class="footer-text-box">
+                            <h2 class="footer-text-download">download app</h2>
+                            <p class="footer-text-show">Show everyone what you can do!</p>
+                        </div>
                     </div>
                 </div>    
                 <div class="buttons buttons-bottom">
